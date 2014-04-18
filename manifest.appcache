@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# ver 2.52
+
+index.html
+js/main.js
+shared/style/headers.css
+custom/js/headers.js
+
+NETWORK:
+*

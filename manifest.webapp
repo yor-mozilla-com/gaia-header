@@ -1,0 +1,22 @@
+{
+  "name": "Header Demo",
+  "description": "Demo app for Custom Element based header",
+  "version": "1.0.0",
+  "launch_path": "/index.html",
+  "type": "privileged",
+  "developer": {
+    "name": "Mozilla",
+    "url": "http://www.mozilla.org/firefox/os/"
+  },
+  "orientation": "portrait",
+  "icons": {
+    "128": "/images/icon.png"
+  },
+  "locales": {
+    "en-US": {
+      "name": "Header Demo",
+      "description": "Demo app for Custom Element base header"
+    }
+  },
+  "default_locale": "en-US"
+}
