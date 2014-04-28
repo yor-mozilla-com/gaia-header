@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+
+  <title>Header Demo</title>
+  <meta name="description" content="Demo app for Custom Element based headers">
+
+  <link rel="stylesheet" href="../../style/headers/content.css">
+  <style type="text/css">
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-size: 10px;
+      background-color: #fff;
+    }
+    body {
+      background: none;
+    }
+    header {
+      margin-bottom: 1.5rem;
+    }
+    #message {
+      font-size: 2rem;
+      margin: 1.5rem 3rem;
+    }
+  </style>
+
+  <template id="header-template">
+    <style scoped> @import url("../../style/headers.css");</style>
+    <section role="region">
+      <header id="header">
+        <button id="action-button"><span id="action-button-span" class="icon"></span></button>
+        <menu id="menu-buttons" type="toolbar">
+            <content id="buttons-content" select="button,a">
+            </content>
+        </menu>
+        <h1 id="title"></h1>
+        <content id="content"></content>
+      </header>
+    </section>
+  </template>
+
+  <script src="js/component.js" type="text/javascript"></script>
+  <script src="js/demo.js" type="text/javascript"></script>
+</head>
+
+<body role="application">
+  <section role="region" class="skin-comms">
+    <header is="gaia-header" id="header1" title="Messages" data-l10n-id="title">
+      <button id="edit1" icon="edit"></button>
+      <button id="add1" icon="add"></button>
+    </header>
+  </section>
+
+  <section role="region">
+    <header is="gaia-header" id="header2" title="Mark Alfenito" action="back">
+      <button id="edit2" icon="edit"></button>
+    </header>
+  </section>
+
+  <section role="region">
+    <header is="gaia-header" id="header3" title="Inbox <em>(2)</em>" action="menu">
+      <button id="edit3" icon="edit"></button>
+      <button id="add3" icon="add"></button>
+    </header>
+  </section>
+
+  <section role="region">
+    <header is="gaia-header" id="header4" title="Title" action="close">
+      <button id="done4">done</button>
+    </header>
+  </section>
+
+  <div id="message">Event message goes here</div>
+
+</body>
+</html>

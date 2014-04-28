@@ -1,0 +1,32 @@
+/* --------------------------------------------------------------------------
+  HEADER SKIN: dark
+  .skin-dark will override default values
+-------------------------------------------------------------------------- */
+
+section[role="region"].skin-dark > header:first-child,
+.skin-dark > section[role="region"] > header:first-child {
+  background-color: #242D33;
+}
+
+section[role="region"].skin-dark > header:first-child > a:not([aria-disabled="true"]):active:after,
+section[role="region"].skin-dark > header:first-child > button:not(:disabled):active:after,
+section[role="region"].skin-dark > header:first-child > a:not([aria-disabled="true"]):hover:after,
+section[role="region"].skin-dark > header:first-child > button:not(:disabled):hover:after,
+section[role="region"].skin-dark > header:first-child menu[type="toolbar"] a:not([aria-disabled="true"]):hover,
+section[role="region"].skin-dark > header:first-child menu[type="toolbar"] button:not(:disabled):hover,
+section[role="region"].skin-dark > header:first-child menu[type="toolbar"] a:not([aria-disabled="true"]):active,
+section[role="region"].skin-dark > header:first-child menu[type="toolbar"] button:not(:disabled):active {
+  background-color: rgba(0,0,0,0.4);
+}
+
+section[role="region"].skin-dark > header:first-child menu[type="toolbar"] a,
+section[role="region"].skin-dark > header:first-child menu[type="toolbar"] button {
+  color: #00aac5;
+}
+
+section[role="region"].skin-dark header h2,
+.skin-dark > section[role="region"] header h2 {
+  background-color: #2c353b;
+  color: #fff;
+  border: none;
+}

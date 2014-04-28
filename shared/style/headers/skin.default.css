@@ -1,0 +1,18 @@
+/* --------------------------------------------------------------------------
+  HEADER SKIN: default
+  Default values applied unless we are overriding them using .skin-*
+-------------------------------------------------------------------------- */
+
+section[role="region"] > header:first-child {
+  color: #fff;
+  background-color: #f97c17;
+}
+
+section[role="region"] > header:first-child h1 {
+  color: #fff;
+}
+
+section[role="region"] header h2 {
+  color: #424242;
+  border-bottom: solid 0.1rem #e6e6e6;
+}
