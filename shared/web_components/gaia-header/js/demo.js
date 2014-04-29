@@ -31,5 +31,32 @@ window.onload = function() {
         var h1 = shadow.querySelector("h1");
         h1.innerHTML = "Done!";
     });
+    document.getElementById('header5').addEventListener('action', function() {
+        document.getElementById('message').innerHTML = "header5 : Back!";
+    });
+    document.getElementById('edit5').addEventListener('click', function() {
+        document.getElementById('message').innerHTML = "header5 : Edit!";
+    });
+    document.getElementById('done5').addEventListener('click', function() {
+        document.getElementById('message').innerHTML = "header5 : Done!";
+    });
+    document.getElementById('header6').addEventListener('action', function() {
+        document.getElementById('message').innerHTML = "header6 : Back!";
+    });
+    document.getElementById('edit6').addEventListener('click', function() {
+        document.getElementById('message').innerHTML = "header6 : Edit!";
+    });
+    document.getElementById('done6').addEventListener('click', function() {
+        document.getElementById('message').innerHTML = "header6 : Done!";
+    });
+    document.getElementById('header7').addEventListener('action', function() {
+        document.getElementById('message').innerHTML = "header7 : Back!";
+    });
+    document.getElementById('edit7').addEventListener('click', function() {
+        document.getElementById('message').innerHTML = "header7 : Edit!";
+    });
+    document.getElementById('done7').addEventListener('click', function() {
+        document.getElementById('message').innerHTML = "header7 : Done!";
+    });
 };
 

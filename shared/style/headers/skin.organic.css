@@ -1,11 +1,11 @@
-/* --------------------------------------------------------------------------
+/* -----------------------------------------------------------------
   HEADER SKIN: organic
   .skin-organic will override default values
--------------------------------------------------------------------------- */
+----------------------------------------------------------------- */
 
 section[role="region"].skin-organic > header:first-child,
 .skin-organic section[role="region"] > header:first-child {
-  background-color: #F4F4F4;
+  background-color: #f4f4f4;
 }
 
 section[role="region"].skin-organic > header:first-child h1,
@@ -13,36 +13,40 @@ section[role="region"].skin-organic > header:first-child h1,
   color: #868692;
 }
 
+section[role="region"].skin-organic > header:first-child a,
+.skin-organic section[role="region"] > header:first-child a,
+section[role="region"].skin-organic > header:first-child button,
+.skin-organic section[role="region"] > header:first-child button {
+  color: #00aac5;
+}
+
 section[role="region"].skin-organic > header:first-child .icon.icon-back,
-.skin-organic section[role="region"] > header:first-child .icon.icon-back {
+.skin-organic section[role="region"] > header:first-child .icon.icon-back,
+[is="gaia-header"][skin="organic"] [icon="back"]:before {
   background-image: url(images/icons/organic/back.svg);
 }
 
 section[role="region"].skin-organic > header:first-child .icon.icon-close,
-.skin-organic section[role="region"] > header:first-child .icon.icon-close {
+.skin-organic section[role="region"] > header:first-child .icon.icon-close,
+[is="gaia-header"][skin="organic"] [icon="close"]:before {
   background-image: url(images/icons/organic/close.svg);
 }
 
 section[role="region"].skin-organic > header:first-child .icon.icon-add,
-.skin-organic section[role="region"] > header:first-child .icon.icon-add {
+.skin-organic section[role="region"] > header:first-child .icon.icon-add,
+[is="gaia-header"][skin="organic"] [icon="add"]:before {
   background-image: url(images/icons/organic/add.png);
 }
 
 section[role="region"].skin-organic > header:first-child .icon.icon-edit,
-.skin-organic section[role="region"] > header:first-child .icon.icon-edit {
+.skin-organic section[role="region"] > header:first-child .icon.icon-edit,
+[is="gaia-header"][skin="organic"] [icon="edit"]:before {
   background-image: url(images/icons/organic/edit.png);
 }
 
 section[role="region"].skin-organic header h2,
 .skin-organic section[role="region"] header h2 {
   background-color: #e7e7e7;
-  color: #4D4D4D;
+  color: #4d4d4d;
   border: none;
-}
-
-section[role="region"].skin-organic > header:first-child a,
-.skin-organic section[role="region"] > header:first-child a,
-section[role="region"].skin-organic > header:first-child button,
-.skin-organic section[role="region"] > header:first-child button {
-  color: #00aac5;
 }
