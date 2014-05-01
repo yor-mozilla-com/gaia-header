@@ -5,7 +5,7 @@
 
 .skin-comms section[role="region"] > header:first-child,
 section[role="region"].skin-comms > header:first-child,
-[is="gaia-header"][skin="comms"] {
+gaia-header[data-skin="comms"] {
   background-color: #33cccc;
 }
 
@@ -13,8 +13,8 @@ section[role="region"].skin-comms > header:first-child,
 .skin-comms section[role="region"] > header:first-child button,
 section[role="region"].skin-comms > header:first-child a,
 section[role="region"].skin-comms > header:first-child button,
-[is="gaia-header"][skin="comms"] a,
-[is="gaia-header"][skin="comms"] button {
+gaia-header[data-skin="comms"] a,
+gaia-header[data-skin="comms"] button {
   color: rgba(0,0,0,0.5);
 }
 
@@ -26,9 +26,9 @@ section[role="region"].skin-comms > header:first-child a:active:after,
 section[role="region"].skin-comms > header:first-child button:active:after,
 section[role="region"].skin-comms > header:first-child a:hover:after,
 section[role="region"].skin-comms > header:first-child button:hover:after,
-[is="gaia-header"][skin="comms"] a:active:after,
-[is="gaia-header"][skin="comms"] button:active:after,
-[is="gaia-header"][skin="comms"] a:hover:after,
-[is="gaia-header"][skin="comms"] button:hover:after {
+gaia-header[data-skin="comms"] a:active:after,
+gaia-header[data-skin="comms"] button:active:after,
+gaia-header[data-skin="comms"] a:hover:after,
+gaia-header[data-skin="comms"] button:hover:after {
   background-color: rgba(0,0,0,0.1);
 }

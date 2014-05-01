@@ -6,7 +6,7 @@
 ----------------------------------------------------------------- */
 
 section[role="region"] > header:first-child,
-[is="gaia-header"] {
+gaia-header {
   position: relative;
   z-index: 10;
   padding: 0;
@@ -15,7 +15,7 @@ section[role="region"] > header:first-child,
 }
 
 section[role="region"] > header:first-child h1,
-[is="gaia-header"] h1 {
+gaia-header h1 {
   font-size: 2.5rem;
   line-height: 5rem;
   text-align: left;
@@ -31,7 +31,7 @@ section[role="region"] > header:first-child h1,
 }
 
 section[role="region"] > header:first-child h1 em,
-[is="gaia-header"] h1 em {
+gaia-header h1 em {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1em;
@@ -96,8 +96,8 @@ section[role="region"] > header:first-child menu {
 
 section[role="region"] > header:first-child a,
 section[role="region"] > header:first-child button,
-[is="gaia-header"] a,
-[is="gaia-header"] button {
+gaia-header a,
+gaia-header button {
   -moz-box-sizing: border-box;
   position: absolute;
   overflow: visible;
@@ -119,8 +119,8 @@ section[role="region"] > header:first-child button,
 
 section[role="region"] > header:first-child button:after,
 section[role="region"] > header:first-child a:after,
-[is="gaia-header"] button:after,
-[is="gaia-header"] a:after {
+gaia-header button:after,
+gaia-header a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -132,8 +132,8 @@ section[role="region"] > header:first-child a:after,
 
 section[role="region"] > header:first-child menu a,
 section[role="region"] > header:first-child menu button,
-[is="gaia-header"] a,
-[is="gaia-header"] button {
+gaia-header a,
+gaia-header button {
   position: relative;
   float: left;
   width: auto;
@@ -149,19 +149,19 @@ section[role="region"] > header:first-child menu button,
 
 section[role="region"] > header:first-child menu a:after,
 section[role="region"] > header:first-child menu button:after,
-[is="gaia-header"] a:after,
-[is="gaia-header"] button:after {
+gaia-header a:after,
+gaia-header button:after {
   width: 100%;
 }
 
 /* Pressed state */
 section[role="region"] > header:first-child a:focus,
-[is="gaia-header"] a:focus {
+gaia-header a:focus {
   outline: none;
 }
 
 section[role="region"] > header:first-child button::-moz-focus-inner,
-[is="gaia-header"] button::-moz-focus-inner {
+gaia-header button::-moz-focus-inner {
   outline: none;
   border: none;
   margin-top: -0.2rem; /* To fix line-height bug (697451) */
@@ -171,15 +171,15 @@ section[role="region"] > header:first-child button::-moz-focus-inner,
 /* Disabled state */
 section[role="region"] > header:first-child a[aria-disabled="true"],
 section[role="region"] > header:first-child button[disabled],
-[is="gaia-header"] a[aria-disabled="true"],
-[is="gaia-header"] button[disabled]  {
+gaia-header a[aria-disabled="true"],
+gaia-header button[disabled]  {
   opacity: 0.3;
   pointer-events: none;
 }
 
 /* Icon definitions */
 section[role="region"] > header:first-child .icon,
-[is="gaia-header"] [icon] {
+gaia-header [data-icon] {
   display: block;
   width: 3rem;
   height: 5rem;
@@ -188,15 +188,15 @@ section[role="region"] > header:first-child .icon,
 }
 
 section[role="region"] > header:first-child menu .icon,
-[is="gaia-header"] [icon] {
+gaia-header [data-icon] {
   background-position: center;
 }
 
-[is="gaia-header"] [icon] {
+gaia-header [data-icon] {
   font-size: 0;
 }
 
-[is="gaia-header"] [icon]:before {
+gaia-header [data-icon]:before {
   position: absolute;
   content: "";
   width: 3rem;
@@ -207,57 +207,57 @@ section[role="region"] > header:first-child menu .icon,
 }
 
 section[role="region"] > header:first-child .icon.icon-add,
-[is="gaia-header"] [icon="add"]:before {
+gaia-header [data-icon="add"]:before {
   background-image: url(images/icons/add.png);
 }
 
 section[role="region"] > header:first-child .icon.icon-compose,
-[is="gaia-header"] [icon="compose"]:before {
+gaia-header [data-icon="compose"]:before {
   background-image: url(images/icons/compose.png);
 }
 
 section[role="region"] > header:first-child .icon.icon-edit,
-[is="gaia-header"] [icon="edit"]:before {
+gaia-header [data-icon="edit"]:before {
   background-image: url(images/icons/edit.png);
 }
 
 section[role="region"] > header:first-child .icon.icon-send,
-[is="gaia-header"] [icon="send"]:before {
+gaia-header [data-icon="send"]:before {
   background-image: url(images/icons/send.png);
 }
 
 section[role="region"] > header:first-child .icon.icon-close,
-[is="gaia-header"] [icon="close"]:before {
+gaia-header [data-icon="close"]:before {
   background-image: url(images/icons/close.svg);
 }
 
 section[role="region"] > header:first-child .icon.icon-back,
-[is="gaia-header"] [icon="back"]:before {
+gaia-header [data-icon="back"]:before {
   background-image: url(images/icons/back.svg);
 }
 
 section[role="region"] > header:first-child .icon.icon-menu,
-[is="gaia-header"] [icon="menu"]:before {
+gaia-header [data-icon="menu"]:before {
   background-image: url(images/icons/menu.svg);
 }
 
 section[role="region"] > header:first-child .icon.icon-user,
-[is="gaia-header"] [icon="user"]:before {
+gaia-header [data-icon="user"]:before {
   background-image: url(images/icons/user.png);
 }
 
 section[role="region"] > header:first-child .icon.icon-up,
-[is="gaia-header"] [icon="up"]:before {
+gaia-header [data-icon="up"]:before {
   background-image: url(images/icons/up.png);
 }
 
 section[role="region"] > header:first-child .icon.icon-down,
-[is="gaia-header"] [icon="down"]:before {
+gaia-header [data-icon="down"]:before {
   background-image: url(images/icons/down.png);
 }
 
 section[role="region"] > header:first-child .icon.icon-options,
-[is="gaia-header"] [icon="options"]:before {
+gaia-header [data-icon="options"]:before {
   background-image: url(images/icons/options.png);
 }
 
@@ -310,8 +310,8 @@ html[dir="rtl"] section[role="region"] > header:first-child a {
 
 html[dir="rtl"] section[role="region"] > header:first-child menu a,
 html[dir="rtl"] section[role="region"] > header:first-child menu button,
-html[dir="rtl"] [is="gaia-header"] a,
-html[dir="rtl"] [is="gaia-header"] button {
+html[dir="rtl"] gaia-header a,
+html[dir="rtl"] gaia-header button {
   margin: 0;
 }
 
@@ -325,7 +325,7 @@ html[dir="rtl"] section[role="region"] > header:first-child .icon {
 }
 
 html[dir="rtl"] section[role="region"] > header:first-child menu .icon,
-html[dir="rtl"] [is="gaia-header"] [icon] {
+html[dir="rtl"] gaia-header [data-icon] {
   background-position: center;
 }
 
