@@ -1,27 +1,29 @@
-/* --------------------------------------------------------------------------
+/* -----------------------------------------------------------------
   HEADER SKIN: dark
   .skin-dark will override default values
--------------------------------------------------------------------------- */
+----------------------------------------------------------------- */
 
 section[role="region"].skin-dark > header:first-child,
 .skin-dark > section[role="region"] > header:first-child {
-  background-color: #242D33;
+  background-color: #242d33;
 }
 
-section[role="region"].skin-dark > header:first-child > a:not([aria-disabled="true"]):active:after,
-section[role="region"].skin-dark > header:first-child > button:not(:disabled):active:after,
-section[role="region"].skin-dark > header:first-child > a:not([aria-disabled="true"]):hover:after,
-section[role="region"].skin-dark > header:first-child > button:not(:disabled):hover:after,
-section[role="region"].skin-dark > header:first-child menu[type="toolbar"] a:not([aria-disabled="true"]):hover,
-section[role="region"].skin-dark > header:first-child menu[type="toolbar"] button:not(:disabled):hover,
-section[role="region"].skin-dark > header:first-child menu[type="toolbar"] a:not([aria-disabled="true"]):active,
-section[role="region"].skin-dark > header:first-child menu[type="toolbar"] button:not(:disabled):active {
-  background-color: rgba(0,0,0,0.4);
-}
-
-section[role="region"].skin-dark > header:first-child menu[type="toolbar"] a,
-section[role="region"].skin-dark > header:first-child menu[type="toolbar"] button {
+.skin-dark section[role="region"] > header:first-child a,
+.skin-dark section[role="region"] > header:first-child button,
+section[role="region"].skin-dark > header:first-child a,
+section[role="region"].skin-dark > header:first-child button {
   color: #00aac5;
+}
+
+.skin-dark section[role="region"] > header:first-child a:active:after,
+.skin-dark section[role="region"] > header:first-child button:active:after,
+.skin-dark section[role="region"] > header:first-child a:hover:after,
+.skin-dark section[role="region"] > header:first-child button:hover:after,
+section[role="region"].skin-dark > header:first-child a:active:after,
+section[role="region"].skin-dark > header:first-child button:active:after,
+section[role="region"].skin-dark > header:first-child a:hover:after,
+section[role="region"].skin-dark > header:first-child button:hover:after {
+  background-color: rgba(0,0,0,0.4);
 }
 
 section[role="region"].skin-dark header h2,

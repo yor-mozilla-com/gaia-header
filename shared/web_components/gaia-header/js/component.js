@@ -16,8 +16,6 @@ var Headers = new function() {
         var title = clone.querySelector('#title');
         var menu = clone.querySelector('#buttons-content');
 
-        root.applyAuthorStyles = true;
-
         // Title
         var titleContent = this.getAttribute('title');
         var l10nId = this.getAttribute('data-l10n-id');
@@ -52,20 +50,13 @@ var Headers = new function() {
         } else {
             actionButton.addEventListener('click', p.handleActionButtonClick.bind(this));
         }
-
-      // Menu buttons
-//        var buttons = this.querySelectorAll('button');
-//        for (var i = 0, len = buttons.length; i < len; i++) {
-//          if (buttons[i].hasAttribute('icon')) {
-//            var spanNode = document.createElement("span");
-//            var buttonType = buttons[i].getAttribute('icon');
-//            spanNode.classList.add('icon');
-//            spanNode.classList.add('icon-'+buttonType);
-//            buttons[i].appendChild(spanNode);
-//          }
-//          menu.appendChild(buttons[i]);
-//        }
-
+        
+        // Skin
+        var skin = this.getAttribute('skin');
+        if (skin) {
+            header.parentNode.classList.add('skin-' + skin);
+        }
+      
         root.appendChild(clone);
     };
 

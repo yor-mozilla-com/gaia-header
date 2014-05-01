@@ -1,7 +1,8 @@
-/* --------------------------------------------------------------------------
+/* -----------------------------------------------------------------
   HEADER SKIN: default
-  Default values applied unless we are overriding them using .skin-*
--------------------------------------------------------------------------- */
+  Default values if we are not overriding them using 
+  class="skin-*"
+----------------------------------------------------------------- */
 
 section[role="region"] > header:first-child {
   color: #fff;
@@ -10,6 +11,17 @@ section[role="region"] > header:first-child {
 
 section[role="region"] > header:first-child h1 {
   color: #fff;
+}
+section[role="region"] > header:first-child a,
+section[role="region"] > header:first-child button {
+  color: rgba(0,0,0,0.6);
+}
+
+section[role="region"] > header:first-child a:active:after,
+section[role="region"] > header:first-child button:active:after,
+section[role="region"] > header:first-child a:hover:after,
+section[role="region"] > header:first-child button:hover:after {
+  background-color: rgba(0,0,0,0.07);
 }
 
 section[role="region"] header h2 {

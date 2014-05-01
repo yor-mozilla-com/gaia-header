@@ -6,7 +6,7 @@
   <title>Header Demo</title>
   <meta name="description" content="Demo app for Custom Element based headers">
 
-  <link rel="stylesheet" href="../../style/headers/content.css">
+  <link rel="stylesheet" href="../../style/headers.css">
   <style type="text/css">
     html, body {
       margin: 0;
@@ -46,7 +46,7 @@
 </head>
 
 <body role="application">
-  <section role="region" class="skin-comms">
+  <section role="region">
     <header is="gaia-header" id="header1" title="Messages" data-l10n-id="title">
       <button id="edit1" icon="edit"></button>
       <button id="add1" icon="add"></button>
@@ -69,6 +69,27 @@
   <section role="region">
     <header is="gaia-header" id="header4" title="Title" action="close">
       <button id="done4">done</button>
+    </header>
+  </section>
+
+  <section role="region" class="skin-dark">
+    <header is="gaia-header" id="header5" title="Skin: dark" action="back" skin="dark">
+      <button id="edit5" icon="edit"></button>
+      <button id="done5">done</button>
+    </header>
+  </section>
+
+  <section role="region" class="skin-organic">
+    <header is="gaia-header" id="header6" title="Skin: organic" action="back" skin="organic">
+      <button id="edit6" icon="edit"></button>
+      <button id="done6">done</button>
+    </header>
+  </section>
+
+  <section role="region" class="skin-comms">
+    <header is="gaia-header" id="header7" title="Skin: comms" action="back" skin="comms">
+      <button id="edit7" icon="edit"></button>
+      <button id="done7">done</button>
     </header>
   </section>
 
