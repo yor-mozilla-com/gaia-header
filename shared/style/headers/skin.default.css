@@ -4,27 +4,36 @@
   class="skin-*"
 ----------------------------------------------------------------- */
 
-section[role="region"] > header:first-child {
+section[role="region"] > header:first-child,
+[is="gaia-header"] {
   color: #fff;
   background-color: #f97c17;
 }
 
-section[role="region"] > header:first-child h1 {
+section[role="region"] > header:first-child h1,
+[is="gaia-header"] h1 {
   color: #fff;
 }
 section[role="region"] > header:first-child a,
-section[role="region"] > header:first-child button {
+section[role="region"] > header:first-child button,
+[is="gaia-header"] a,
+[is="gaia-header"] button {
   color: rgba(0,0,0,0.6);
 }
 
 section[role="region"] > header:first-child a:active:after,
 section[role="region"] > header:first-child button:active:after,
 section[role="region"] > header:first-child a:hover:after,
-section[role="region"] > header:first-child button:hover:after {
+section[role="region"] > header:first-child button:hover:after,
+[is="gaia-header"] a:active:after,
+[is="gaia-header"] button:active:after,
+[is="gaia-header"] a:hover:after,
+[is="gaia-header"] button:hover:after {
   background-color: rgba(0,0,0,0.07);
 }
 
-section[role="region"] header h2 {
+section[role="region"] header h2,
+[is="gaia-header"] h2 {
   color: #424242;
   border-bottom: solid 0.1rem #e6e6e6;
 }

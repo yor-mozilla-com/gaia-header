@@ -5,7 +5,8 @@
   dependent styles.
 ----------------------------------------------------------------- */
 
-section[role="region"] > header:first-child {
+section[role="region"] > header:first-child,
+[is="gaia-header"] {
   position: relative;
   z-index: 10;
   padding: 0;
@@ -13,7 +14,8 @@ section[role="region"] > header:first-child {
   border: none;
 }
 
-section[role="region"] > header:first-child h1 {
+section[role="region"] > header:first-child h1,
+[is="gaia-header"] h1 {
   font-size: 2.5rem;
   line-height: 5rem;
   text-align: left;
@@ -28,7 +30,8 @@ section[role="region"] > header:first-child h1 {
   font-style: italic;
 }
 
-section[role="region"] > header:first-child h1 em {
+section[role="region"] > header:first-child h1 em,
+[is="gaia-header"] h1 em {
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 1em;
@@ -92,7 +95,9 @@ section[role="region"] > header:first-child menu {
 ---------------------------------- */
 
 section[role="region"] > header:first-child a,
-section[role="region"] > header:first-child button {
+section[role="region"] > header:first-child button,
+[is="gaia-header"] a,
+[is="gaia-header"] button {
   -moz-box-sizing: border-box;
   position: absolute;
   overflow: visible;
@@ -113,7 +118,9 @@ section[role="region"] > header:first-child button {
 }
 
 section[role="region"] > header:first-child button:after,
-section[role="region"] > header:first-child a:after {
+section[role="region"] > header:first-child a:after,
+[is="gaia-header"] button:after,
+[is="gaia-header"] a:after {
   content: "";
   position: absolute;
   left: 0;
@@ -125,8 +132,8 @@ section[role="region"] > header:first-child a:after {
 
 section[role="region"] > header:first-child menu a,
 section[role="region"] > header:first-child menu button,
-section[role="region"] > header:first-child[is] a,
-section[role="region"] > header:first-child[is] button {
+[is="gaia-header"] a,
+[is="gaia-header"] button {
   position: relative;
   float: left;
   width: auto;
@@ -142,17 +149,19 @@ section[role="region"] > header:first-child[is] button {
 
 section[role="region"] > header:first-child menu a:after,
 section[role="region"] > header:first-child menu button:after,
-section[role="region"] > header:first-child[is] a:after,
-section[role="region"] > header:first-child[is] button:after {
+[is="gaia-header"] a:after,
+[is="gaia-header"] button:after {
   width: 100%;
 }
 
 /* Pressed state */
-section[role="region"] > header:first-child a:focus {
+section[role="region"] > header:first-child a:focus,
+[is="gaia-header"] a:focus {
   outline: none;
 }
 
-section[role="region"] > header:first-child button::-moz-focus-inner {
+section[role="region"] > header:first-child button::-moz-focus-inner,
+[is="gaia-header"] button::-moz-focus-inner {
   outline: none;
   border: none;
   margin-top: -0.2rem; /* To fix line-height bug (697451) */
@@ -161,13 +170,16 @@ section[role="region"] > header:first-child button::-moz-focus-inner {
 
 /* Disabled state */
 section[role="region"] > header:first-child a[aria-disabled="true"],
-section[role="region"] > header:first-child button[disabled]  {
+section[role="region"] > header:first-child button[disabled],
+[is="gaia-header"] a[aria-disabled="true"],
+[is="gaia-header"] button[disabled]  {
   opacity: 0.3;
   pointer-events: none;
 }
 
 /* Icon definitions */
-section[role="region"] > header:first-child .icon {
+section[role="region"] > header:first-child .icon,
+[is="gaia-header"] [icon] {
   display: block;
   width: 3rem;
   height: 5rem;
@@ -298,8 +310,8 @@ html[dir="rtl"] section[role="region"] > header:first-child a {
 
 html[dir="rtl"] section[role="region"] > header:first-child menu a,
 html[dir="rtl"] section[role="region"] > header:first-child menu button,
-html[dir="rtl"] section[role="region"] > header:first-child[is] a,
-html[dir="rtl"] section[role="region"] > header:first-child[is] button {
+html[dir="rtl"] [is="gaia-header"] a,
+html[dir="rtl"] [is="gaia-header"] button {
   margin: 0;
 }
 
