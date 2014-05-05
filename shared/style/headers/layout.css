@@ -1,13 +1,13 @@
-/* -----------------------------------------------------------------
+/* -------------------------------------------------------------------
   HEADERS: layout
   This is our base CSS file.
-  Should not be defined here form factor or skin 
-  dependent styles.
------------------------------------------------------------------ */
+  Form factor or Skin dependent styles should NOT be defined here.
+------------------------------------------------------------------- */
 
 section[role="region"] > header:first-child,
 gaia-header {
   position: relative;
+  display: block;
   z-index: 10;
   padding: 0;
   height: 5rem;
@@ -38,10 +38,10 @@ gaia-header h1 em {
   font-style: normal;
 }
 
-/* Forms in header are only used in email app. 
+/* Forms in header are only used in email app.
    Incorrect UI style.
-   Sould be removed after landing bug 1001298 
-*/ 
+   Sould be removed after landing bug 1001298
+*/
 section[role="region"] > header:first-child form {
   display: block;
   overflow: hidden;
@@ -100,6 +100,7 @@ gaia-header a,
 gaia-header button {
   -moz-box-sizing: border-box;
   position: absolute;
+  display: block;
   overflow: visible;
   float: left;
   width: 5rem;
@@ -119,8 +120,8 @@ gaia-header button {
 
 section[role="region"] > header:first-child button:after,
 section[role="region"] > header:first-child a:after,
-gaia-header button:after,
-gaia-header a:after {
+gaia-header a:after,
+gaia-header button:after {
   content: "";
   position: absolute;
   left: 0;
@@ -172,14 +173,16 @@ gaia-header button::-moz-focus-inner {
 section[role="region"] > header:first-child a[aria-disabled="true"],
 section[role="region"] > header:first-child button[disabled],
 gaia-header a[aria-disabled="true"],
-gaia-header button[disabled]  {
+gaia-header button[disabled] {
   opacity: 0.3;
   pointer-events: none;
 }
 
-/* Icon definitions */
-section[role="region"] > header:first-child .icon,
-gaia-header [data-icon] {
+/* ----------------------------------
+  Icons
+---------------------------------- */
+
+section[role="region"] > header:first-child .icon {
   display: block;
   width: 3rem;
   height: 5rem;
@@ -206,61 +209,6 @@ gaia-header [data-icon]:before {
   left: 1rem;
 }
 
-section[role="region"] > header:first-child .icon.icon-add,
-gaia-header [data-icon="add"]:before {
-  background-image: url(images/icons/add.png);
-}
-
-section[role="region"] > header:first-child .icon.icon-compose,
-gaia-header [data-icon="compose"]:before {
-  background-image: url(images/icons/compose.png);
-}
-
-section[role="region"] > header:first-child .icon.icon-edit,
-gaia-header [data-icon="edit"]:before {
-  background-image: url(images/icons/edit.png);
-}
-
-section[role="region"] > header:first-child .icon.icon-send,
-gaia-header [data-icon="send"]:before {
-  background-image: url(images/icons/send.png);
-}
-
-section[role="region"] > header:first-child .icon.icon-close,
-gaia-header [data-icon="close"]:before {
-  background-image: url(images/icons/close.svg);
-}
-
-section[role="region"] > header:first-child .icon.icon-back,
-gaia-header [data-icon="back"]:before {
-  background-image: url(images/icons/back.svg);
-}
-
-section[role="region"] > header:first-child .icon.icon-menu,
-gaia-header [data-icon="menu"]:before {
-  background-image: url(images/icons/menu.svg);
-}
-
-section[role="region"] > header:first-child .icon.icon-user,
-gaia-header [data-icon="user"]:before {
-  background-image: url(images/icons/user.png);
-}
-
-section[role="region"] > header:first-child .icon.icon-up,
-gaia-header [data-icon="up"]:before {
-  background-image: url(images/icons/up.png);
-}
-
-section[role="region"] > header:first-child .icon.icon-down,
-gaia-header [data-icon="down"]:before {
-  background-image: url(images/icons/down.png);
-}
-
-section[role="region"] > header:first-child .icon.icon-options,
-gaia-header [data-icon="options"]:before {
-  background-image: url(images/icons/options.png);
-}
-
 /* ----------------------------------
   Subheader
 ---------------------------------- */
@@ -282,7 +230,8 @@ section[role="region"] header h2 {
   right-to-left
 ---------------------------------- */
 
-html[dir="rtl"] section[role="region"] > header:first-child h1 {
+html[dir="rtl"] section[role="region"] > header:first-child h1,
+html[dir="rtl"] gaia-header h1 {
   text-align: right;
   padding: 0 3rem 0 1rem;
 }
@@ -303,20 +252,24 @@ html[dir="rtl"] section[role="region"] > header:first-child menu {
 }
 
 html[dir="rtl"] section[role="region"] > header:first-child button,
-html[dir="rtl"] section[role="region"] > header:first-child a {
+html[dir="rtl"] section[role="region"] > header:first-child a,
+html[dir="rtl"] gaia-header button,
+html[dir="rtl"] gaia-header a {
   float: right;
   margin: 0 0 0 -5rem;
 }
 
 html[dir="rtl"] section[role="region"] > header:first-child menu a,
 html[dir="rtl"] section[role="region"] > header:first-child menu button,
-html[dir="rtl"] gaia-header a,
-html[dir="rtl"] gaia-header button {
+html[dir="rtl"] gaia-header button,
+html[dir="rtl"] gaia-header a {
   margin: 0;
 }
 
 html[dir="rtl"] section[role="region"] > header:first-child button:after,
-html[dir="rtl"] section[role="region"] > header:first-child a:after {
+html[dir="rtl"] section[role="region"] > header:first-child a:after,
+html[dir="rtl"] gaia-header button:after,
+html[dir="rtl"] gaia-header a:after {
   right: 0;
 }
 
@@ -324,8 +277,7 @@ html[dir="rtl"] section[role="region"] > header:first-child .icon {
   background-position: 0.2rem center;
 }
 
-html[dir="rtl"] section[role="region"] > header:first-child menu .icon,
-html[dir="rtl"] gaia-header [data-icon] {
+html[dir="rtl"] section[role="region"] > header:first-child menu .icon {
   background-position: center;
 }
 
