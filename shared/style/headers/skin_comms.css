@@ -4,9 +4,8 @@
 ----------------------------------------------------------------- */
 
 .skin-comms section[role="region"] > header:first-child,
-section[role="region"].skin-comms > header:first-child,
-gaia-header[data-skin="comms"] {
-  background-color: #33cccc;
+section[role="region"].skin-comms > header:first-child {
+  background-color: #00adad;
 }
 
 .skin-comms section[role="region"] > header:first-child a,
@@ -26,8 +25,6 @@ section[role="region"].skin-comms > header:first-child a:active:after,
 section[role="region"].skin-comms > header:first-child button:active:after,
 section[role="region"].skin-comms > header:first-child a:hover:after,
 section[role="region"].skin-comms > header:first-child button:hover:after,
-gaia-header[data-skin="comms"] a:active:after,
-gaia-header[data-skin="comms"] button:active:after,
 gaia-header[data-skin="comms"] a:hover:after,
 gaia-header[data-skin="comms"] button:hover:after {
   background-color: rgba(0,0,0,0.1);

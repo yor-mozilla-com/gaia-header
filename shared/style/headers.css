@@ -1,8 +1,5 @@
 @import url("headers/layout.css");
-@import url("headers/content.css");
-/*@import url("headers/mobile.css");
-@import url("headers/tablet.css");*/
-@import url("headers/skin.default.css");
-@import url("headers/skin.comms.css");
-@import url("headers/skin.dark.css");
-@import url("headers/skin.organic.css");
+@import url("headers/skin_default.css");
+@import url("headers/skin_comms.css");
+@import url("headers/skin_dark.css");
+@import url("headers/skin_organic.css");
