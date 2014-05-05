@@ -30,12 +30,12 @@
     <style scoped> @import url("../../style/headers.css");</style>
     <section role="region">
       <header id="header">
-        <button id="action-button"><span id="action-button-span" class="icon"></span></button>
+        <button id="action-button"><span id="action-button-inner" class="icon"></span></button>
         <menu id="menu-buttons" type="toolbar">
-            <content id="buttons-content" select="button,a">
-            </content>
+          <content id="buttons-content" select="button,a">
+          </content>
         </menu>
-        <h1 id="title"></h1>
+        <content select="h1,h2,h3,h4"></content>
         <content id="content"></content>
       </header>
     </section>
@@ -46,52 +46,45 @@
 </head>
 
 <body role="application">
-  <section role="region">
-    <header is="gaia-header" id="header1" title="Messages" data-l10n-id="title">
-      <button id="edit1" icon="edit"></button>
-      <button id="add1" icon="add"></button>
-    </header>
-  </section>
+  <gaia-header id="header1">
+    <h1 id="title1" data-l10n-id="title">Messages</h1>
+    <button id="edit1" data-icon="edit"></button>
+    <button id="add1" data-icon="add"></button>
+  </gaia-header>
 
-  <section role="region">
-    <header is="gaia-header" id="header2" title="Mark Alfenito" action="back">
-      <button id="edit2" icon="edit"></button>
-    </header>
-  </section>
+  <gaia-header id="header2" data-action="back">
+    <h1 id="title2">Mark Alfenito</h1>
+    <button id="edit2" data-icon="edit"></button>
+  </gaia-header>
 
-  <section role="region">
-    <header is="gaia-header" id="header3" title="Inbox <em>(2)</em>" action="menu">
-      <button id="edit3" icon="edit"></button>
-      <button id="add3" icon="add"></button>
-    </header>
-  </section>
+  <gaia-header id="header3" data-action="menu">
+    <h1 id="title2">Inbox <em>(2)</em></h1>
+    <button id="edit3" data-icon="edit"></button>
+    <button id="add3" data-icon="add"></button>
+  </gaia-header>
 
-  <section role="region">
-    <header is="gaia-header" id="header4" title="Title" action="close">
-      <button id="done4">done</button>
-    </header>
-  </section>
+  <gaia-header id="header4" data-action="close">
+    <h1 id="title2">Title</h1>
+    <button id="done4">done</button>
+  </gaia-header>
 
-  <section role="region" class="skin-dark">
-    <header is="gaia-header" id="header5" title="Skin: dark" action="back" skin="dark">
-      <button id="edit5" icon="edit"></button>
-      <button id="done5">done</button>
-    </header>
-  </section>
+  <gaia-header id="header5" data-action="back" data-skin="dark">
+    <h1 id="title2">Skin: dark</h1>
+    <button id="edit5" data-icon="edit"></button>
+    <button id="done5">done</button>
+  </gaia-header>
 
-  <section role="region" class="skin-organic">
-    <header is="gaia-header" id="header6" title="Skin: organic" action="back" skin="organic">
-      <button id="edit6" icon="edit"></button>
-      <button id="done6">done</button>
-    </header>
-  </section>
+  <gaia-header id="header6" data-action="back" data-skin="organic">
+    <h1 id="title2">Skin: organic</h1>
+    <button id="edit6" data-icon="edit"></button>
+    <button id="done6">done</button>
+  </gaia-header>
 
-  <section role="region" class="skin-comms">
-    <header is="gaia-header" id="header7" title="Skin: comms" action="back" skin="comms">
-      <button id="edit7" icon="edit"></button>
-      <button id="done7">done</button>
-    </header>
-  </section>
+  <gaia-header id="header7" data-action="back" data-skin="comms">
+    <h1 id="title2">Skin: comms</h1>
+    <button id="edit7" data-icon="edit"></button>
+    <button id="done7">done</button>
+  </gaia-header>
 
   <div id="message">Event message goes here</div>
 
